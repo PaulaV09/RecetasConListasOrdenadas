@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <title>Receta de Pastel</title>
     <style>
-      ol {
+      .main-steps {
         list-style-type: upper-alpha;
       }
-      ol ol {
+      .sub-steps {
         list-style-type: lower-roman;
       }
-      ul {
+      .ul-steps {
         list-style-type: square;
       }
     </style>
@@ -52,10 +52,10 @@
     <h1>Receta de Ensalada de Frutas</h1>
 
     <h2>Pasos principales</h2>
-    <ol type="A">
+    <ol type="A" class="main-steps">
       <li>
         Preparar los ingredientes
-        <ul>
+        <ul class="ul-steps">
           <li>Manzanas</li>
           <li>Bananas</li>
           <li>Uvas</li>
@@ -64,7 +64,7 @@
       </li>
       <li>
         Cortar la fruta
-        <ol type="i">
+        <ol type="i" class="sub-steps">
           <li>Pelar las bananas</li>
           <li>Picar las manzanas en cubos</li>
           <li>Partir las uvas a la mitad</li>
@@ -75,7 +75,7 @@
     </ol>
 
     <h2>Opcional</h2>
-    <ol start="5" type="A">
+    <ol start="5" type="A" class="main-steps">
       <li>Añadir yogur natural</li>
       <li>Decorar con hojas de menta</li>
     </ol>
